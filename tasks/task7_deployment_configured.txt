@@ -1,0 +1,4 @@
+# Task 7: Terminal output confirming the updated deployment using 'kubectl apply -f deployment.yml' (1 Point)
+
+theia@theiaopenshift-sohamd530:/home/project/guestbook/v1/guestbook$ kubectl apply -f deployment.yml
+deployment.apps/guestbook configured
