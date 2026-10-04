@@ -1,0 +1,9 @@
+# Task 10: Terminal output from 'kubectl get rs' showing ReplicaSets after rollback (2 Points)
+
+theia@theiaopenshift-sohamd530:/home/project/guestbook/v1/guestbook$ kubectl rollout undo deployment/guestbook --to-revision=1
+deployment.apps/guestbook rolled back
+
+theia@theiaopenshift-sohamd530:/home/project/guestbook/v1/guestbook$ kubectl get rs
+NAME                               DESIRED   CURRENT   READY   AGE
+guestbook-5547dffcbf               0         0         0       8m54s
+guestbook-c7b7bc7b4                1         1         1       60m
