@@ -1,0 +1,9 @@
+# Task 2: Terminal output showing the image pushed to IBM Cloud Container Registry with tag v1, using 'ibmcloud cr images' (1 Point)
+
+theia@theiaopenshift-sohamd530:/home/project/guestbook/v1/guestbook$ ibmcloud cr images
+Listing images...
+
+Repository                             Tag      Digest         Namespace             Created         Size     Security status
+us.icr.io/sn-labs-sohamd530/guestbook   v1       664f44d41ea3   sn-labs-sohamd530    2 minutes ago   32 MB    No Issues
+
+OK
