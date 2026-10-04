@@ -1,0 +1,8 @@
+# Task 4: Terminal output showing the Horizontal Pod Autoscaler (HPA) created with 0 replicas (1 Point)
+
+theia@theiaopenshift-sohamd530:/home/project/guestbook/v1/guestbook$ kubectl autoscale deployment guestbook --cpu-percent=5 --min=1 --max=10
+horizontalpodautoscaler.autoscaling/guestbook autoscaled
+
+theia@theiaopenshift-sohamd530:/home/project/guestbook/v1/guestbook$ kubectl get hpa guestbook
+NAME        REFERENCE              TARGETS        MINPODS   MAXPODS   REPLICAS   AGE
+guestbook   Deployment/guestbook   <unknown>/5%   1         10        0          15s
