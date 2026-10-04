@@ -1,0 +1,12 @@
+# Task 6: Terminal output from the file showing the Docker push of the updated image, including the final digest line (2 Points)
+
+theia@theiaopenshift-sohamd530:/home/project/guestbook/v1/guestbook$ docker push us.icr.io//guestbook:v1
+The push refers to repository [us.icr.io/sn-labs-sohamd530/guestbook]
+5f70bf18a086: Layer already exists 
+4c021bd9e92a: Pushed 
+d5b82a70cd26: Pushed 
+f15bfb8cf01f: Pushed 
+e0ab807bbed7: Pushed 
+21f71d20e354: Layer already exists 
+548a79621a42: Layer already exists 
+v1: digest: sha256:1ede2d520d0bf95a2edeaf26e5ffd3f5604dfb906122e5cd7b592e01cbb25fce size: 1776
