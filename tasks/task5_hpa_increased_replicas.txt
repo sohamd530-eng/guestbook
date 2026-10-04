@@ -1,0 +1,8 @@
+# Task 5: Terminal output showing increased replicas, confirming autoscaling is working (2 Points)
+
+theia@theiaopenshift-sohamd530:/home/project/guestbook/v1/guestbook$ kubectl get hpa guestbook --watch
+NAME        REFERENCE              TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+guestbook   Deployment/guestbook   5%/5%     1         10        1          3m55s
+guestbook   Deployment/guestbook   10%/5%    1         10        1          4m1s
+guestbook   Deployment/guestbook   10%/5%    1         10        2          4m16s
+guestbook   Deployment/guestbook   15%/5%    1         10        3          4m32s
